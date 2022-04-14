@@ -9,7 +9,7 @@ $(document).ready(function() {
 });
 
 function doWork() {
-    var filepath = "data/IPEDs.csv";  
+    var filepath = "static/data/IPEDs.csv";  
     
          // clear out the old map 
          $("#map-container").empty();
