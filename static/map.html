@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>US Colleges</title>
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <!-- Leaflet JavaScript code -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JavaScript file -->
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="css/mapstyle.css">
+
+</head>
+
+<body>
+    <!-- The div where we'll insert our map -->
+
+    <div class= "container-fluid">
+
+        <div class="row">
+            <div class= "col-md-12">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                  <h1 class="navbar-brand">US Colleges</h1>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-header">Filter My Results</div>
+                    <div class="card-body">
+                      <h4 class="card-title">Show Me The Colleges With:</h4>
+                      
+
+                      <!-- HIGHEST DEGREE OFFERING -->
+                      <div class="form-group">
+                        <label for="hloffer" class="form-label"> Hospital Available</label>
+                        <select class="form-select" id="hloffer" name="sorting">
+                          <option value="Award of less than one academic year" >Award of less than one academic year</option>
+                          <option value="At least 1, but less than 2 academic yrs">At least 1, but less than 2 academic yrs</option>
+                          <option value="Associate's degree">Associate's degree</option>
+                          <option value="At least 2, but less than 4 academic yrs">At least 2, but less than 4 academic yrs</option>
+                          <option value="Bachelor's degree">Bachelor's degree</option>
+                          <option value="Postbaccalaureate certificate">Postbaccalaureate certificate</option>
+                          <option value="Master's degree">Master's degree</option>
+                          <option value="Post-master's certificate">Post-master's certificate</option>
+                          <option value="Doctor's degree" selected="selected">Doctor's Degree</option>
+                          <option value="{Not available}">Unlisted</option>
+                        </select>
+                    </div>
+                      
+                      <!-- LOCALE -->
+                      <div class="form-group">
+                        <label for="locale" class="form-label"> Locale</label>
+                        <select class="form-select" id="locale" name="sorting">
+                          <option value="City: Large" selected="selected">City: Large</option>
+                          <option value="City: Midsize">City: Midsize</option>
+                          <option value="City: Small">City: Small</option>
+                          <option value="Suburb: Large">Suburb: Large</option>
+                          <option value="Suburb: Midsize">Suburb: Midsize</option>
+                          <option value="Suburb: Small">Suburb: Small</option>
+                          <option value="Town: Fringe">Town: Fringe</option>
+                          <option value="Town: Distant">Town: Distant</option>
+                          <option value="Town: Remote">Town: Remote</option>
+                          <option value="Rural: Fringe">Rural: Fringe</option>
+                          <option value="Rural: Distant">Rural: Distant</option>
+                          <option value="Rural: Remote">Rural: Remote</option>
+                          <option value="{Not available}">Not available</option>
+
+                        </select>
+                    </div>
+
+
+
+                    
+                      <!-- Hospital Available -->
+                      <div class=" form-group">
+                        <label for="hospital" class="form-label"> Hospital Available</label>
+                        <select class="form-select" id="hospital" name="sorting">
+                          <option value="Yes">Yes</option>
+                          <option value="No" selected="selected">No</option>
+                        </select>
+                    </div>
+                      <!-- Medical Degree Granting -->
+                      <div class="form-group">
+                        <label for="medical" class="form-label"> Medical Degree Granting</label>
+                        <select class="form-select" id="medical" name="sorting">
+                          <option value="Yes">Yes</option>
+                          <option value="No" selected="selected">No</option>
+                        </select>
+                    </div>
+
+                    <!-- HBCU-->
+                      <div class=" form-group">
+                        <label for="hbcu" class="form-label"> HBCU</label>
+                        <select class="form-select" id="hbcu" name="sorting">
+                          <option value="Yes">Yes</option>
+                          <option value="No" selected="selected">No</option>
+                        </select>
+                    </div>
+                    <!-- tribal -->
+                    <div class="form-group">
+                        <label for="tribal" class="form-label"> Tribal</label>
+                        <select class="form-select" id="tribal" name="sorting">
+                          <option value="Yes">Yes</option>
+                          <option value="No" selected="selected">No</option>
+                        </select>
+                    </div>
+
+                    <!-- end list -->
+                      
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-secondary" id="filter">Show Me Schools!</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p> Data Provided from IPEDS</p>
+                        </div>
+                    </div>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-9">
+                <div id="map-container">
+                    <div id="map"></div>
+                </div>
+                
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <div class='row'>
+            <div class="col-md-2"></div>
+            <div class = "col-md-8"> 
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-body">
+                        <div class='container-fluid'>
+                            <div class='row'>
+                                <div class="col-md-8">
+                                    <h4 class="card-title">See Table Data</h4>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" class="btn btn-secondary" href="#"> Here </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-2"></div>
+
+            </div>
+           
+    </div>
+            
+        
+    
+
+</body>
+
+</html>
