@@ -1,0 +1,12 @@
+data cleaning
+https://datatofish.com/replace-values-pandas-dataframe/
+
+data-- IPEDs
+https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx?gotoReportId=7&fromIpeds=true
+
+
+Multiple filters
+https://stackoverflow.com/questions/52520048/array-filtering-with-multiple-conditions-javascript
+
+Alert box
+https://iq.opengenus.org/alert-confirm-prompt-in-javascript/
