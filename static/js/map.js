@@ -143,7 +143,7 @@ function makeMap(data) {
         center: [
             39.099724, -94.578331
           ],
-          zoom: 4.5,
+          zoom: 4,
           layers: [dark_layer, markerLayer]
       });
 
