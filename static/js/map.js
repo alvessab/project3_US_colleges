@@ -85,18 +85,12 @@ function makeMap(data) {
 
         var tribal = $("#tribal").val();
 
-        //start filtering by all options
-
-        if (hloffer == "All") {
-        }
-        else {
-            var first= data.filter(x => x["Highest Level of Offering"]== hloffer)
-        }
-        
         //filter all values
-        let row = first.filter(function (selections) {
+        let row = data.filter(function (selections) {
         // the current value is an object, so you can check on its properties
         return (selections["Open for Admission to the General Public"] == openpub)
+
+            &&(selections["Highest Level of Offering"] === hloffer) 
         
             &&(selections["Locale"] === locale) 
 
@@ -107,10 +101,9 @@ function makeMap(data) {
             && (selections["Medical Degree Granting"] === medical) 
 
             && (selections["Tribal"] === tribal) 
-        
-        ;
-    });
-  
+            ;
+        });
+
     
         //alert if no results; console log otherwise
         if (row.length ==0) {
