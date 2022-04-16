@@ -72,19 +72,29 @@ function makeMap(data) {
 
         //variables
         var openpub = "Institution is open to the public"
+     
+        var hloffer = $("#hloffer").val();
 
         var locale = $("#locale").val();
-
-        var hbcu = $("#hbcu").val();
 
         var hospital = $("#hospital").val();
 
         var medical = $("#medical").val();
 
+        var hbcu = $("#hbcu").val();
+
         var tribal = $("#tribal").val();
 
+        //start filtering by all options
+
+        if (hloffer == "All") {
+        }
+        else {
+            var first= data.filter(x => x["Highest Level of Offering"]== hloffer)
+        }
+        
         //filter all values
-        let row = data.filter(function (selections) {
+        let row = first.filter(function (selections) {
         // the current value is an object, so you can check on its properties
         return (selections["Open for Admission to the General Public"] == openpub)
         
@@ -97,9 +107,9 @@ function makeMap(data) {
             && (selections["Medical Degree Granting"] === medical) 
 
             && (selections["Tribal"] === tribal) 
-            
-            ;
-        });
+        
+        ;
+    });
   
     
         //alert if no results; console log otherwise
@@ -119,7 +129,7 @@ function makeMap(data) {
         
         let coord = [lat, long] 
     
-        let marker = L.marker(coord).bindPopup(`<h3>${college["Institution"]}</h3><a href=${college["Web Address"]} target="_blank">${college["Web Address"]}</a><p>${college["Size and Setting Classification"]}</p>`);
+        let marker = L.marker(coord).bindPopup(`<h3>${college["Institution"]}</h3><a href=https://${college["Web Address"]} target="_blank">${college["Web Address"]}</a><p>${college["Size and Setting Classification"]}</p>`);
 
         markers.push(marker);
 
