@@ -50,6 +50,7 @@ function filterAndPlot() {
 
     makePlot(schools, career_median_salary);
     makeSunburst(sub);
+    makeDonut(sub);
 }
 
 
@@ -123,6 +124,58 @@ function makeSunburst(sub) {
 
     Plotly.newPlot('donut', data, layout);
 }
+
+function makeDonut(sub) {
+
+    // var regions = sub.map(x => x.Region);
+    //var regions_set = new Set(regions);
+    var type = sub.map(x => x.SchoolType);
+    var type_set = new Set(type);
+    var labels = [...type_set];
+    var parents = labels.map(x => "");
+    labels.push(...type);
+
+    parents.push(...type);
+
+    var values = [];
+    for (let i = 0; i < parents.length; i++) {
+        values.push(1);
+    }
+
+    var data = [{
+        values: values,
+        labels: labels,
+        domain: { column: 0 },
+        name: 'GHG Emissions',
+        hoverinfo: 'label+percent',
+        hole: .4,
+        type: 'pie'
+    }];
+
+    var layout = {
+        title: 'School Type Breakdown',
+        annotations: [{
+            font: {
+                size: 9.5
+            },
+            textinfo: "label+percent+name",
+            showarrow: false,
+            text: ' School Type',
+            x: 0.13,
+            y: 0.5
+        }],
+        height: 400,
+        width: 600,
+        showlegend: true,
+        grid: { rows: 1, columns: 2 },
+        //colorway: c("#0c6509", "#7e5b06", "#740404", "#02285c", "#6f6161")
+    };
+
+    Plotly.newPlot('scatter', data, layout);
+}
+
+
+
 // function makeChart()
 // var arr = global_data.map(x => x["Region"])
 
