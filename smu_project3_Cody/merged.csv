@@ -1,0 +1,96 @@
+SchoolName,Region,starting_median_salary,career_median_salary,STABBR,CBSA,LONGITUDE,LATITUDE,SchoolType
+Harvey Mudd College,California,71800.0,122000.0,CA,31080,-117.709837,34.106515,Engineering
+Occidental College,California,51900.0,105000.0,CA,31080,-118.210908,34.127124,Liberal Arts
+Pomona College,California,48600.0,101000.0,CA,31080,-117.714556,34.099027,Liberal Arts
+Humboldt State University,California,42600.0,71300.0,CA,21700,-124.078293,40.877481,State
+Thomas Aquinas College,California,41500.0,67500.0,CA,37100,-119.087141,34.429009,Liberal Arts
+Colorado School of Mines,Western,58100.0,106000.0,CO,19740,-105.223364,39.751443,Engineering
+University of Arizona,Western,47500.0,86100.0,AZ,46060,-110.950815,32.232672,State
+University of Utah,Western,45400.0,83200.0,UT,41620,-111.846044,40.762484,State
+University of Idaho,Western,44900.0,82000.0,ID,34140,-117.014167,46.727406,State
+University of Puget Sound,Western,46600.0,81500.0,WA,42660,-122.478982,47.26308,Liberal Arts
+Reed College,Western,40500.0,81100.0,OR,38900,-122.630348,45.480959,Liberal Arts
+Whitman College,Western,43500.0,80100.0,WA,47460,-118.331546,46.069815,Liberal Arts
+Utah State University,Western,43800.0,78700.0,UT,30860,-111.81391,41.740748,State
+University of Oregon,Western,42200.0,78400.0,OR,21660,-123.075792,44.045146,State
+Western Washington University,Western,42700.0,75400.0,WA,13380,-122.485734,48.737812,State
+Idaho State University,Western,44900.0,73400.0,ID,38540,-112.432312,42.863832,State
+Lewis & Clark College,Western,38900.0,72600.0,OR,38900,-122.669137,45.450882,Liberal Arts
+Eastern Washington University,Western,38600.0,70900.0,WA,44060,-117.583808,47.490667,State
+Fort Lewis College,Western,42000.0,69800.0,CO,20420,-107.867422,37.275939,Liberal Arts
+Southern Utah University,Western,41900.0,56500.0,UT,16260,-113.070146,37.674617,State
+Carleton College,Midwestern,47500.0,103000.0,MN,22060,-93.154666,44.462318,Liberal Arts
+DePauw University,Midwestern,41400.0,88200.0,IN,26900,-86.860363,39.640904,Liberal Arts
+Iowa State University,Midwestern,45400.0,84600.0,IA,11180,-93.648504,42.026212,State
+Denison University,Midwestern,42000.0,83500.0,OH,18140,-82.523272,40.071505,Liberal Arts
+Oberlin College,Midwestern,43400.0,81600.0,OH,17460,-82.216795,41.291992,Liberal Arts
+University of Kansas,Midwestern,42400.0,81600.0,KS,29940,-95.247567,38.958549,State
+Gustavus Adolphus College,Midwestern,44500.0,80600.0,MN,31860,-93.972196,44.323626,Liberal Arts
+University of North Dakota,Midwestern,44000.0,80600.0,ND,24220,-97.071738,47.921654,State
+Wittenberg University,Midwestern,39200.0,78200.0,OH,44220,-83.815445,39.934029,Liberal Arts
+Grinnell College,Midwestern,42600.0,76600.0,IA,-2,-92.722094,41.747952,Liberal Arts
+Wayne State University,Midwestern,42800.0,76100.0,MI,19820,-83.068998,42.358994,State
+University of Toledo,Midwestern,43100.0,75900.0,OH,45780,-83.614714,41.660572,State
+Illinois State University,Midwestern,42000.0,73400.0,IL,14010,-88.990058,40.509403,State
+Cleveland State University,Midwestern,43500.0,73100.0,OH,17460,-81.674355,41.502281,State
+University of Nebraska at Omaha,Midwestern,41500.0,72600.0,NE,36540,-96.008516,41.258769,State
+Eastern Michigan University,Midwestern,40300.0,72100.0,MI,11460,-83.627443,42.251675,State
+Pittsburg State University,Midwestern,40400.0,58200.0,KS,38260,-94.702473,37.392071,State
+Black Hills State University,Midwestern,35300.0,43900.0,SD,43940,-103.870966,44.494889,State
+Washington and Lee University,Southern,53600.0,104000.0,VA,-2,-79.443018,37.788939,Liberal Arts
+Davidson College,Southern,46100.0,104000.0,NC,16740,-80.843979,35.499767,Liberal Arts
+University of Richmond,Southern,48600.0,94600.0,VA,40060,-77.538806,37.577393,Liberal Arts
+George Mason University,Southern,47800.0,86900.0,VA,47900,-77.307428,38.829976,State
+Clemson University,Southern,48400.0,86000.0,SC,24860,-82.835114,34.679381,State
+Auburn University,Southern,45400.0,84700.0,AL,12220,-85.488258,32.599378,State
+University of Delaware,Southern,45900.0,84500.0,DE,37980,-75.752822,39.679577,State
+Randolph-Macon College,Southern,42600.0,83600.0,VA,40060,-77.478416,37.76043,Party
+Randolph-Macon College,Southern,42600.0,83600.0,VA,40060,-77.478416,37.76043,Liberal Arts
+University of Arkansas,Southern,44100.0,82800.0,AR,22220,-94.176981,36.070009,State
+Tennessee Technological University,Southern,46200.0,80000.0,TN,18260,-85.504039,36.174754,Engineering
+University of Mississippi,Southern,41400.0,79700.0,MS,37060,-89.537434,34.365529,Party
+University of Mississippi,Southern,41400.0,79700.0,MS,37060,-89.537434,34.365529,State
+Lamar University,Southern,46500.0,79400.0,TX,13140,-94.072244,30.042738,State
+Georgia State University,Southern,41800.0,74000.0,GA,12060,-84.38667,33.7527,State
+Appalachian State University,Southern,40400.0,69100.0,NC,14380,-81.680583,36.215536,State
+Western Carolina University,Southern,36900.0,66600.0,NC,19000,-83.186258,35.308979,State
+Morehead State University,Southern,34800.0,60600.0,KY,-2,-83.434021,38.186768,State
+Austin Peay State University,Southern,37700.0,59200.0,TN,17300,-87.354081,36.533319,State
+Dartmouth College,Northeastern,58000.0,134000.0,NH,30100,-72.289949,43.704115,Ivy League
+Princeton University,Northeastern,66500.0,131000.0,NJ,45940,-74.659365,40.348732,Ivy League
+Yale University,Northeastern,59100.0,126000.0,CT,35300,-72.926688,41.311158,Ivy League
+Harvard University,Northeastern,63400.0,124000.0,MA,14460,-71.118313,42.374471,Ivy League
+University of Pennsylvania,Northeastern,60900.0,120000.0,PA,37980,-75.19391,39.950929,Ivy League
+Cornell University,Northeastern,60300.0,110000.0,NY,27060,-76.483084,42.4472,Ivy League
+Bucknell University,Northeastern,54100.0,110000.0,PA,30260,-76.882616,40.954317,Liberal Arts
+Brown University,Northeastern,56200.0,109000.0,RI,39300,-71.40385,41.82617,Ivy League
+Colgate University,Northeastern,52800.0,108000.0,NY,45060,-75.536346,42.819475,Liberal Arts
+Amherst College,Northeastern,54500.0,107000.0,MA,44140,-72.518493,42.372459,Liberal Arts
+Lafayette College,Northeastern,53900.0,107000.0,PA,10900,-75.209786,40.69956,Liberal Arts
+Bowdoin College,Northeastern,48100.0,107000.0,ME,38860,-69.963942,43.907134,Liberal Arts
+College of the Holy Cross,Northeastern,50200.0,106000.0,MA,49340,-71.808214,42.23752,Liberal Arts
+Stevens Institute of Technology,Northeastern,60600.0,105000.0,NJ,35620,-74.025334,40.744776,Engineering
+Swarthmore College,Northeastern,49700.0,104000.0,PA,37980,-75.354278,39.905159,Liberal Arts
+Williams College,Northeastern,51700.0,102000.0,MA,38340,-73.203132,42.712725,Liberal Arts
+Wentworth Institute of Technology,Northeastern,53000.0,96700.0,MA,14460,-71.094983,42.336632,Engineering
+Bates College,Northeastern,47300.0,96500.0,ME,30340,-70.203333,44.105299,Liberal Arts
+Binghamton University,Northeastern,53600.0,95900.0,NY,13780,-75.966889,42.087868,State
+Union College,Northeastern,47200.0,95800.0,KY,30940,-83.888477,36.870875,Liberal Arts
+Union College,Northeastern,47200.0,95800.0,NE,30700,-96.651095,40.774778,Liberal Arts
+Union College,Northeastern,47200.0,95800.0,NY,10580,-73.928788,42.818097,Liberal Arts
+Vassar College,Northeastern,46000.0,94600.0,NY,39100,-73.895088,41.686895,Liberal Arts
+Middlebury College,Northeastern,47700.0,94200.0,VT,-2,-73.176068,44.009117,Liberal Arts
+Mount Holyoke College,Northeastern,42400.0,94200.0,MA,44140,-72.575511,42.256838,Liberal Arts
+Stony Brook University,Northeastern,49500.0,93000.0,NY,35620,-73.12046,40.91476,State
+Franklin and Marshall College,Northeastern,49100.0,92800.0,PA,29540,-76.319037,40.048045,Liberal Arts
+Colby College,Northeastern,46400.0,85800.0,ME,12300,-69.66337,44.564211,Liberal Arts
+Gettysburg College,Northeastern,44700.0,85800.0,PA,23900,-77.236792,39.836597,Liberal Arts
+Siena College,Northeastern,45500.0,85200.0,NY,10580,-73.7526,42.717602,Liberal Arts
+Smith College,Northeastern,44000.0,83900.0,MA,44140,-72.638097,42.318111,Liberal Arts
+Hamilton College,Northeastern,49200.0,83700.0,NY,46540,-75.408195,43.050245,Liberal Arts
+Wellesley College,Northeastern,42800.0,83500.0,MA,14460,-71.306605,42.291554,Liberal Arts
+Ursinus College,Northeastern,42100.0,80000.0,PA,37980,-75.456505,40.193023,Liberal Arts
+Juniata College,Northeastern,41800.0,78900.0,PA,26500,-78.017292,40.500523,Liberal Arts
+Skidmore College,Northeastern,41600.0,74600.0,NY,10580,-73.785335,43.097035,Liberal Arts
+Moravian College,Northeastern,42500.0,74400.0,PA,10900,-75.383638,40.630947,Liberal Arts
+University of Southern Maine,Northeastern,39400.0,63600.0,ME,38860,-70.274247,43.662863,State
