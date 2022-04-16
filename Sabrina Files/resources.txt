@@ -10,3 +10,13 @@ https://stackoverflow.com/questions/52520048/array-filtering-with-multiple-condi
 
 Alert box
 https://iq.opengenus.org/alert-confirm-prompt-in-javascript/
+
+Jumbotron code
+https://getbootstrap.com/docs/4.0/components/jumbotron/
+
+
+https://blog.hubspot.com/marketing/how-to-add-html-embed-codes-ht
+
+
+font -awesome images
+https://fontawesome.com/icons/graduation-cap?s=solid
