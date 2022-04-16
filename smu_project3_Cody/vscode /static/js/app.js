@@ -121,15 +121,18 @@ function makeSunburst(sub) {
         labels: labels,
         parents: parents,
         values: values,
+        hoverinfo: 'label+percent+value',
         outsidetextfont: { size: 20, color: "#377eb8" },
         leaf: { opacity: 0.4 },
-        marker: { line: { width: 2 } },
+        marker: { line: { width: 2 } }
     }];
 
     var layout = {
         margin: { l: 0, r: 0, b: 0, t: 0 },
         width: 500,
-        height: 500
+        height: 500,
+        sunburstcolorway: ["#0c6509", "#7e5b06", "#740404", "#02285c", "#6f6161"]
+
     };
 
 
@@ -177,6 +180,7 @@ function makeDonut(sub) {
         }],
         height: 500,
         width: 750,
+        colorway: ["#0c6509", "#7e5b06", "#740404", "#02285c", "#6f6161"],
         showlegend: true,
         grid: { rows: 1, columns: 2 },
 
