@@ -69,7 +69,68 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 jumbotron text-center">
+            <div class="col-md-3">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-header">Apply Your Filter</div>
+                    <div class="card-body">
+                        <div class="well">
+                            <label class="one-sort">Region</label>
+                            <br>
+                            <select id="selDataset">
+                                <option>All</option>
+                                <option>California</option>
+                                <option>Midwestern</option>
+                                <option>Northeastern</option>
+                                <option>Western</option>
+                                <option>Southern</option>
+                            </select>
+                        </div>
+
+                        <div class="groups">
+                            <label class="two-sort">School Type</label>
+                            <br>
+                            <select id="selType">
+                                <option>All</option>
+                                <option>Engineering</option>
+                                <option>Liberal Arts</option>
+                                <option>State</option>
+                                <option>Party</option>
+                                <option>Ivy League</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sorting" class="form-label">Ascending or Descending</label>
+                            <select class="form-select" id="sorting" name="sorting">
+                              <option>Ascending</option>
+                              <option selected="selected">Descending</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="slices" class="form-label">How many Schools for the Salary Chart?</label>
+                            <input type="number" id="slices" name="slices" min="0" max="20" step="1" value="10">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-primary" id="filter">FILTER!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-9">
+                <div id="scatter"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <div class="col-md-12 jumbotron text-center">
                 <h1>Region and College Type Breakdown</h1>
                 <p>Use the interactive charts below to explore the dataset</p>
             </div>
@@ -134,23 +195,23 @@
 
             </div>
 
+        </div> -->
+    <div class="row">
+        <div class="col-md-12">
+            <div id="donut"></div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="donut"></div>
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="bar"></div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="bar"></div>
-            </div>
-        </div>
+    </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <div id="scatter"></div>
-            </div>
+    <!-- <div class="row">
+        <div class="col-md-12">
+            <div id="scatter"></div>
         </div>
+    </div> -->
 </body>
 
 </html>

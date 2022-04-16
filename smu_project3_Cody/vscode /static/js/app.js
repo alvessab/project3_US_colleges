@@ -79,11 +79,22 @@ function makePlot(schools, career_median_salary) {
 
     var data1 = [trace1];
     var layout = {
-        "title": "Bar Chart Placeholder",
-        "yaxis": {
+        title: {
+            text: 'Career Median Salary Vs School',
+        },
+        xaxis: {
+            title: {
+                text: 'Career Median Salary $(thousands)',
+            },
+        },
+        yaxis: {
+            title: {
+                text: 'School',
+            },
             automargin: true
         }
-    }
+    };
+
 
     Plotly.newPlot('bar', data1, layout);
 }
@@ -146,9 +157,9 @@ function makeDonut(sub) {
         values: values,
         labels: labels,
         domain: { column: 0 },
-        name: 'GHG Emissions',
-        hoverinfo: 'label+percent',
+        hoverinfo: 'label+percent+value',
         hole: .4,
+
         type: 'pie'
     }];
 
@@ -158,17 +169,17 @@ function makeDonut(sub) {
             font: {
                 size: 9.5
             },
-            textinfo: "label+percent+name",
+            textinfo: "label+percent+value",
             showarrow: false,
-            text: ' School Type',
-            x: 0.13,
+            text: 'School Type',
+            x: 0.17,
             y: 0.5
         }],
-        height: 400,
-        width: 600,
+        height: 500,
+        width: 750,
         showlegend: true,
         grid: { rows: 1, columns: 2 },
-        //colorway: c("#0c6509", "#7e5b06", "#740404", "#02285c", "#6f6161")
+
     };
 
     Plotly.newPlot('scatter', data, layout);
