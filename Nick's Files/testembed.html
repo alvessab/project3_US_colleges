@@ -31,7 +31,7 @@
         .range([innerRadius, outerRadius]);
 
     var z = d3.scaleOrdinal()
-        .range(["#0c6509", "#7e5b06", "#740404", "#02285c", "#6f6161", "#d0743c", "#ff8c00"]);
+        .range(["#0c6509", "#7e5b06", "#ff8c00", "#02285c", "#6f6161", "black","#740404"]);
 
     d3.csv("degrees-that-pay-back.csv", function(d, i, columns) {
         for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
