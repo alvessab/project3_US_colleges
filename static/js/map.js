@@ -85,6 +85,7 @@ function makeMap(data) {
 
         var tribal = $("#tribal").val();
 
+        
         //filter all values
         let row = data.filter(function (selections) {
         // the current value is an object, so you can check on its properties
@@ -122,7 +123,10 @@ function makeMap(data) {
         
         let coord = [lat, long] 
     
-        let marker = L.marker(coord).bindPopup(`<h3>${college["Institution"]}</h3><a href=https://${college["Web Address"]} target="_blank">${college["Web Address"]}</a><p>${college["Size and Setting Classification"]}</p>`);
+        let marker = L.marker(coord).bindPopup(`<h3>${college["Institution"]}</h3><a href=https://${college["Web Address"]} target="_blank">${college["Web Address"]}</a>
+        <p>${college["Address"]}, ${college["CITY"]}, ${college["State"]}, ${college["ZIP"]}</p>
+        <p>Degree Level Offered: ${college["Degree Level Offered"]}</p>
+        <p>Size and Setting Classification: ${college["Size and Setting Classification"]}</p>`);
 
         markers.push(marker);
 
